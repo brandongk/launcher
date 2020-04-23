@@ -1,0 +1,27 @@
+import setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="launcher",
+    version="0.0.1",
+    author="Brandon Graham-Knight",
+    author_email="brandongk@gmail.com",
+    description="Allows command discovery and launching in multiple adaptors.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/brandongk60/launcher",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: UNCLICENSE",
+        "Operating System :: Ubuntu :: 18.04",
+    ],
+    python_requires='>=3.6',
+    entry_points={
+        "console_scripts": [
+            "launch = launcher.launch:launch"
+        ]
+    }
+)

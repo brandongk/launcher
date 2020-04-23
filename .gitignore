@@ -1,0 +1,14 @@
+**
+!tests
+!test/**
+!launcher
+!launcher/**
+!LICENSE
+!README.md
+!setup.py
+!.gitignore
+!requirements.txt
+!.vscode
+!.vscode/extensions.json
+!.vscode/settings.json
+**/__pycache__
